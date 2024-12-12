@@ -1,8 +1,8 @@
-#Introdução
+# Introdução
 
 Chatbots são uma solução poderosa para interagir automaticamente com usuários em diversas aplicações, como atendimento ao cliente, educação e suporte técnico. Este artigo explora como você pode criar um chatbot utilizando o modelo DialoGPT da Microsoft, a biblioteca Transformers e a ferramenta Gradio para criar uma interface interativa.
 
-#Por que usar o DialoGPT?
+# Por que usar o DialoGPT?
 
 O DialoGPT é um modelo de linguagem treinado para gerar respostas em conversas informais, o que o torna ideal para criar chatbots de propósito geral. Ele é:
 
@@ -12,15 +12,15 @@ Eficaz para interações conversacionais: Projetado para aprender padrões em tr
 
 Flexível: Pode ser ajustado para diferentes contextos.
 
-#Passo a Passo para Criar o Chatbot
+# Passo a Passo para Criar o Chatbot
 
-#1. Configurando o Ambiente
+# 1. Configurando o Ambiente
 
 Instale as dependências necessárias:
 
 pip install transformers gradio torch
 
-#2. Carregando o Modelo e o Tokenizer
+# 2. Carregando o Modelo e o Tokenizer
 
 Utilize o AutoModelForCausalLM e o AutoTokenizer para carregar o modelo DialoGPT.
 
@@ -30,7 +30,7 @@ Carregar o modelo e o tokenizer
 modelo = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-large")
 tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-large")
 
-#3. Criando a Função de Predição
+# 3. Criando a Função de Predição
 
 Implemente uma função para gerar respostas baseadas na entrada do usuário e no histórico da conversa.
 
